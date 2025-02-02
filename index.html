@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="KYC No Knowledge - Zero Knowledge Proofs for Solana Wallets">
+	<title>kycnk.com - Know Your Customer No Knowledge</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://cdn.jsdelivr.net/npm/web3.js"></script> <!-- Placeholder, adjust as necessary -->
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h1>Welcome to KYC No Knowledge</h1>
+			<p>Your Solana wallet, your data—private. Secure, decentralized customer identification using zero knowledge
+				proofs.</p>
+		</div>
+	</header>
+
+	<section id="intro">
+		<div class="container">
+			<h2>What is KYC No Knowledge?</h2>
+			<p>
+				KYC No Knowledge (KYCnk) provides a decentralized solution to the traditional "Know Your Customer" process. With
+				KYCnk, we ensure that your personal data is never exposed to third parties, while still providing proof of your
+				identity through zero-knowledge proofs.
+			</p>
+			<p>
+				By using a Solana wallet account hash, we can verify your customer data and allow other companies to access only
+				the necessary, verifiable information—without compromising your privacy.
+			</p>
+		</div>
+	</section>
+
+	<section id="how-it-works">
+		<div class="container">
+			<h2>How It Works</h2>
+			<ol>
+				<li><strong>Create Your Solana Wallet:</strong> Link your Solana wallet to our system.</li>
+				<li><strong>Verify with Zero Knowledge Proofs:</strong> Use zero-knowledge proofs to verify your identity.</li>
+				<li><strong>Grant Permissions:</strong> Control which companies have access to what information without sharing
+					sensitive data.</li>
+			</ol>
+			<p>To learn more about the concept of Zero Knowledge vs. Decentralized KYC, check out this insightful blog post:
+				<a href="https://www.togggle.io/blog/understanding-zero-knowledge-vs-decentralized-kyc" target="_blank"
+					rel="noopener noreferrer">Understanding Zero Knowledge vs. Decentralized KYC</a>.
+			</p>
+		</div>
+	</section>
+
+	<section id="learn-more">
+		<div class="container">
+			<h2>Learn More About Zero Knowledge KYC</h2>
+			<ul>
+				<li><a
+						href="https://medium.com/@Mr.AliH.Muhammad/unlocking-the-power-of-web3-understanding-zero-knowledge-proof-kyc-79d8375291ef"
+						target="_blank" rel="noopener noreferrer">Unlocking the Power of Web3: Understanding Zero Knowledge Proof
+						KYC</a> - Medium</li>
+				<li><a href="https://cointelegraph.com/news/why-zero-knowledge-kyc-won-t-work" target="_blank"
+						rel="noopener noreferrer">Why Zero Knowledge KYC Won't Work</a> - CoinTelegraph</li>
+				<li><a href="https://medium.com/coinmonks/zkkyc-zero-knowledge-proofs-in-blockchain-kyc-34485091b4a"
+						target="_blank" rel="noopener noreferrer">zkKYC: Zero Knowledge Proofs in Blockchain KYC</a> - Medium</li>
+				<li><a href="https://eprint.iacr.org/2021/907.pdf" target="_blank" rel="noopener noreferrer">Zero Knowledge
+						Proofs for Privacy-preserving KYC</a> - Research Paper (PDF)</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="benefits">
+		<div class="container">
+			<h2>Benefits of KYCnk</h2>
+			<ul>
+				<li><strong>Data Privacy:</strong> Your personal data remains secure and private.</li>
+				<li><strong>Decentralized:</strong> A decentralized approach using blockchain technology for maximum security.
+				</li>
+				<li><strong>Zero-Knowledge Proofs:</strong> Grant verifiable proof of your identity without exposing any
+					sensitive details.</li>
+				<li><strong>Full Control:</strong> You control who can access your data, ensuring compliance with privacy
+					standards.</li>
+			</ul>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2025 KYCnk - All Rights Reserved</p>
+		</div>
+	</footer>
+
+	<!-- Add your JavaScript here -->
+	<script>
+		// Example of integrating wallet connection (custom code required for real implementation)
+		async function connectWallet() {
+			if (window.solana && window.solana.isPhantom) {
+				const wallet = await window.solana.connect();
+				console.log("Connected wallet:", wallet.publicKey.toString());
+			} else {
+				alert("Please install Phantom wallet.");
+			}
+		}
+	</script>
+</body>
+
+</html>
